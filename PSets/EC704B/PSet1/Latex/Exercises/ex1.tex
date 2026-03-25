@@ -1,0 +1,42 @@
+\subsection*{Part 1}
+The continuous time limit of the unemployment rate evolution is 
+\begin{equation}
+    \dot u(t) = -f_t u(t) + s_t (1-u(t))
+\end{equation}
+
+\subsection*{Part 2}
+Rewriting above equation for $t\in[m, m+1)$,
+\begin{align*}
+    \dot u(t) + (f_m + s_m)u(t) &= s_m\\
+    \implies \frac{d }{d t}u(t)e^{(f_m + s_m)t} &= s_m e^{(f_m + s_m)t}\\
+    \implies u(t) &= \frac{s_m}{f_m + s_m} + C e^{-(f_m + s_m)t}
+\end{align*}
+
+setting $u(t_m) = u_m$ gives
+\begin{equation}
+    u(t) = \frac{s_m}{f_m + s_m} + \left(u_m - \frac{s_m}{f_m + s_m} \right) e^{-(f_m + s_m)(t-t_m)}
+\end{equation}
+
+which gives
+\begin{align*}
+    u_{m+1} &=  \frac{s_m}{f_m + s_m} + \left(u_m - \frac{s_m}{f_m + s_m} \right) e^{-(f_m + s_m)}\\
+    \implies u_{m+1} - u_m &= - \underbrace{\frac{f_m}{f_m + s_m} \left( 1 - e^{-(f_m + s_m)} \right)}_{=F_m} u_m + \underbrace{\frac{s_m}{f_m + s_m} \left( 1 - e^{-(f_m + s_m)} \right)}_{=S_m} (1 - u_m)
+\end{align*}
+
+Which gives expressions
+\begin{align}
+    F_m &= \frac{f_m}{f_m + s_m} \left( 1 - e^{-(f_m + s_m)} \right) \label{eq:q1_fm_Fm_rel}\\
+    S_m &= \frac{s_m}{f_m + s_m} \left( 1 - e^{-(f_m + s_m)} \right) \label{eq:q1_sm_Sm_rel}
+\end{align}
+
+\subsection*{Part 3}
+The time aggregation bias are
+\begin{align*}
+    F_m - f_m &= -f_m \left(1 - \frac{1}{f_m + s_m} \left( 1 - e^{-(f_m + s_m)} \right)  \right) \\
+    S_m - s_m &= -s_m \left(1 - \frac{1}{f_m + s_m} \left( 1 - e^{-(f_m + s_m)} \right)  \right)
+\end{align*}
+
+These expressions show that there is a negative bias in the monthly measured job-finding and job-losing rates. This is precisely because it is possible that workers find a job and then lose it within a month. When both $f_m$ and $s_m$ are small, the bias goes to zero as $\frac{1-e^{-x}}{x} \approx 1$. This is because the probability of getting a job and then losing it within the same month is of second order.\\
+
+If either $f_m$ or $s_m$ is large, then both job-finding and job-losing rates have equal relative bias. 
+
