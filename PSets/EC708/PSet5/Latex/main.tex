@@ -1,0 +1,72 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath, amssymb}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{xparse}       % For defining commands with multiple arguments
+\usepackage{float}
+\usepackage{subcaption}
+\usepackage{booktabs}         % For \midrule, \toprule, \bottomrule in tables
+
+% Custom problem command
+\NewDocumentCommand{\problem}{m m}{%
+  \section*{Problem #1}           % 2. Section heading with problem number
+  \input{#2}
+  \vspace{1em}\par\noindent\hrule % 1. Horizontal line after the problem
+}
+\newcommand{\question}[1]{\fbox{\parbox{\textwidth}{#1}}\vspace{1em}}
+
+
+
+% Title info
+\newcommand{\hmwkTitle}{Problem Set 5}
+\newcommand{\hmwkDueDate}{\today}
+\newcommand{\hmwkClass}{EC 708 - Econometrics 1}
+\newcommand{\hmwkAuthorName}{Kartik Patekar U71448411}
+
+
+% Useful math symbols
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+
+
+% Header/Footer
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\hmwkAuthorName}
+\lhead{\hmwkTitle}
+\cfoot{\thepage}
+
+
+% Document
+\begin{document}
+
+% no indentation
+\setlength{\parindent}{0pt}
+
+% Title
+\begin{center}
+  \textbf{\Large \hmwkClass}\\
+  \textbf{\hmwkTitle}\\
+  \hmwkAuthorName \\
+  \hmwkDueDate
+\end{center}
+
+% -------------------
+\problem{1}{Exercises/ex1.tex}
+
+
+% -------------------
+
+
+% \begin{figure}[h!]
+%   \centering
+%   \includegraphics[width=0.8\textwidth]{example-image.png}
+%   \caption{A sample image}
+%   \label{fig:sample-image}
+% \end{figure}
+
+% -------------------
+\end{document}

@@ -1,0 +1,83 @@
+Define cost function $c(e)$ with $c(e_L) = 0$ and $c(e_H) = c$.
+
+\subsection*{Part a}
+The principal's problem is
+\begin{align*}
+    U_P^* &= \max_{e, w_S, w_L} f(\pi| e)(\pi_S- w_S) + (1-f(\pi| e))(\pi_F- w_L)\\
+    & s.t. ~~~  f(\pi| e)w_S + (1-f(\pi| e))w_L - c(e) \ge 0\\
+    &~~~~~~~   f(\pi| e)w_S + (1-f(\pi| e))w_L  - c(e)\ge f(\pi| e')w_S + (1-f(\pi| e'))w_L - c(e') ~~~\text{for}~e' \neq e
+\end{align*}
+
+\textbf{Case 1: In equilibrium, $e= e_H$}.\\
+Participation constraint: $w_S \ge c$.\\
+Incentive constraint: $(1-p)w_S \ge (1-p)w_L + c$.\\
+
+\begin{align*}
+    U_P(e_H) &= \max_{w_S, w_L} (\pi_S- w_S) \\
+    & s.t. ~~~  w_S \ge c, (1-p)w_S \ge (1-p)w_L + c
+\end{align*}
+
+which gives solutions
+\begin{align*}
+    w_S &= c\\
+    w_L &\le -\frac{p}{1-p} c\\
+    U_P(e_H) &= \pi_S - c
+\end{align*}
+
+\textbf{Case 2: In equilibrium, $e= e_L$}.\\
+Participation constraint: $p w_S + (1-p)w_L \ge 0$.\\
+Incentive constraint: $(1-p)w_S \le (1-p)w_L + c$.\\
+
+\begin{align*}
+    U_P(e_L) &= \max_{w_S, w_L} p(\pi_S- w_S) + (1-p)(\pi_F- w_L) \\
+    & s.t. ~~~  p w_S + (1-p)w_L \ge 0, (1-p)w_S \le (1-p)w_L + c
+\end{align*}
+
+which has the solution (agent is paid marginally more than outside option)
+\begin{align*}
+    w_S &= 0\\
+    w_L &= 0\\
+    U_P(e_L) &= p \pi_S + (1-p)\pi_F
+\end{align*}
+
+\textbf{Combined solution}
+
+If the total surplus is higher for high effort, i.e.  $\pi_S - c \ge p \pi_S + (1-p)\pi_F$, then principal uses wage contract $w_S = c,  w_L \le -\frac{p}{1-p} c$ to induce high effort. \\
+
+Otherwise, if the total surplus is higher for low effort, i.e.  $\pi_S - c < p \pi_S + (1-p)\pi_F$, then principal uses wage contract $w_S = w_L = 0$ to induce low effort.
+
+\subsection*{Part b}
+\begin{align*}
+    U_P^* &= \max_{e, w_S, w_L} f(\pi| e)(\pi_S- w_S) + (1-f(\pi| e))(\pi_F- w_L)\\
+    & s.t. ~~~  f(\pi| e)w_S + (1-f(\pi| e))w_L - c(e) \ge 0\\
+    &~~~~~~~   f(\pi| e)w_S + (1-f(\pi| e))w_L  - c(e)\ge f(\pi| e')w_S + (1-f(\pi| e'))w_L - c(e') ~~~\text{for}~e' \neq e\\
+    &~~~~~~~ w_S, w_L \ge 0
+\end{align*}
+
+\textbf{Case 1: In equilibrium, $e= e_H$}.\\
+Participation constraint: $w_S \ge c$.\\
+Incentive constraint: $(1-p)w_S \ge (1-p)w_L + c$.\\
+
+\begin{align*}
+    U_P(e_H) &= \max_{w_S, w_L} (\pi_S- w_S) \\
+    & s.t. ~~~  w_S \ge c, (1-p)w_S \ge (1-p)w_L + c
+\end{align*}
+
+which gives solutions
+\begin{align*}
+    w_S &= \frac{c}{1-p}\\
+    w_L &= 0\\
+    U_P(e_H) &= \pi_S - \frac{c}{1-p}
+\end{align*}
+
+\textbf{Case 2: In equilibrium, $e= e_L$}.\\
+this is unchnaged with solution
+\begin{align*}
+    w_S &= 0\\
+    w_L &= 0\\
+    U_P(e_L) &= p \pi_S + (1-p)\pi_F
+\end{align*}
+
+Now, if $\pi_S - \frac{c}{1-p} \ge p \pi_S + (1-p)\pi_F$, the principal induces high efforts using wage contract $w_S = \frac{c}{1-p}, w_L = 0$. Otherwise, they induce low effort with wage contract $w_S = w_L = 0$. \\
+
+Note that when we have $\pi_S - \frac{c}{1-p} < p \pi_S + (1-p)\pi_F \le \pi_S - c$, under limited liability the total surplus is $p \pi_S + (1-p)\pi_F$ which is less than the total surplus without limited liability $\pi_S - c$.

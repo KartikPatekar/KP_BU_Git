@@ -1,0 +1,22 @@
+\subsection*{Part a}
+
+The sender recommends $r = 1 \text{ if } v_s > 0 \text{ and } r = 0 \text{ if } v_s < 0$. The receiver's expected payoff is 
+\begin{align*}
+    \mathbb E u^R(d| r = 1) &= d\mathbb  E[v_r| v_s > 0]\\
+    \mathbb E u^R(d| r = 0) &= d\mathbb  E[v_r| v_s < 0]
+\end{align*}
+
+Under given conditions $\mathbb E u^R(d=1| r = 1) > \mathbb E u^R(d=0| r = 1)$ and $\mathbb E u^R(d=1| r = 0) < \mathbb E u^R(d=0| r = 0)$. Hence receiver accepts sender's recommendation in equilibrium. \\
+
+Given the receiver's strategy, the sender's expected utility is 
+\begin{align*}
+    \mathbb E u^S(r | v_r, v_s) &= d(r) v_s = r v_s
+\end{align*}
+Therefore, sender recommends truthfully, i.e. $r = 1 \text{ if } v_s > 0 \text{ and } r = 0 \text{ if } v_s < 0$.
+
+\subsection*{Part b}
+
+The conditions $\mathbb{E}(v_r \mid v_s > 0) > 0$ and $\mathbb{E}(v_r \mid v_s < 0) < 0$ imply that whenever project is beneficial to sender, the receiver is also expected to benefit. Similarly, whenever project is harmful to sender, the receiver has negative payoff from project. \\
+
+Therefore, the sender can truthfully report whether their payoff from project is positive or negative. Since receiver's expected payoff is of the same sign, their interests are aligned with sender.
+

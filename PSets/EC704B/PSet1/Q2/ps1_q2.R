@@ -244,6 +244,9 @@ ur_group <- dt[emp_status %in% c("E", "U"),
     labs(title = "Monthly Job-Finding Probability (F_m) by Education",
         x = "Month", y = "F_m", color = "Education") +
     theme_minimal() + theme(legend.position = "bottom")
+
+  print(p_Fm)
+
   ggsave("Figures/plot_q2_2_Fm_by_educ.pdf", p_Fm, width = 10, height = 5)
 
   # Plot S_m

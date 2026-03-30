@@ -1,0 +1,31 @@
+\subsection*{Part a}
+
+Let $\bar P = P(\phi) =  \mathbb E[\omega| \phi]$ be the market price of firm if entrepreneur does not disclose the value. If entrepreneur discloses value $v = \omega$, then the price is given by $P(v) = v = \omega$. Since entrepreneur wants to maximize price, they will only disclose if they have information and $\omega \ge P(\phi) = V^*$.\\
+
+\subsection*{Part b}
+we have
+\begin{align*}
+    V^* &= \mathbb E[\omega| \phi] = (1-q)\mathbb E[\omega] + q\mathbb E[\omega| \omega \le V^*]\\
+    &= 0.5(1-q) + 0.5 q V^*\\
+    \implies V^* &= \frac{1-q}{2-q}
+\end{align*}
+
+\subsection*{Part c}
+If entrepreuner remains uninformed (with probabiltiy $1-q$), then
+$$ P(\text{entrepreuner uninformed}) = V^* = \frac{1-q}{2-q}$$ 
+
+Expected pay-off if they become informed
+\begin{align*}
+    \mathbb E[P(\text{entrepreuner informed})] &= \mathbb P(\omega \le V^*) V^* + \mathbb P(\omega \ge V^*) \mathbb E[\omega| \omega \ge V^*]\\
+    &= (V^*)^2 + (1-V^*)\left( \frac{V^*+1}{2}\right)\\
+    &= \frac{(V^*)^2 + 1}{2}
+\end{align*}
+
+The expected payoff of obtaining information is
+\begin{align*}
+    \text{expected payoff of info} &= \frac{(1-V^*)^2}{2} = \frac{1}{2(2-q)^2}
+\end{align*}
+
+As $q$ increases, the expected payoff of obtaining information goes up, and therefore the entrepreneur would
+be willing to pay more to obtain the information. This is because at higher $q$, the market believes that entrepreneur is more likely to know the true value, and if entrepreneur does not disclose the information (if they don't have it), then it is more likely that the value of firm is low. Therefore, at higher $q$, if entrepreneur do not have the information, they would be more willing to pay for the information.
+

@@ -1,0 +1,62 @@
+\subsection*{Part a}
+
+When effort is observable, let the wage contract be $w(\pi, e)$. Since agent is risk averse while principle is risk neutral, $w(\pi, e) = w(e)$ (since otherwise principal will have to pay higher expected wage to agent to compensate for risk).\\
+
+The principal can induce desired effort $e$ by setting $w(e) = g(e)^2$ and $w(e') = 0$ for $e' \neq e$. The principal's payoff for induced effort $e$ is 
+
+\begin{align*}
+    U_P(e) &= f(\pi_H|e)\pi_H + f(\pi_L|e)\pi_L - w(e) \\
+    &= 10f(\pi_H|e) - g(e)^2\\
+    &= \begin{cases}
+        \frac{35}{9}~~~\text{if}~e = e_1\\
+        \frac{61}{25}~~~\text{if}~e = e_2\\
+        \frac{14}{9}~~~\text{if}~e = e_3
+    \end{cases}
+\end{align*}
+
+And therefore, the optimal contract is 
+\begin{align*}
+    w(e)&= \begin{cases}
+        \frac{25}{9}~~~\text{if}~e = e_1\\
+        0~~~\text{if}~e \neq e_1
+    \end{cases}
+\end{align*}
+
+\subsection*{Part b}
+Since effort level is not observable, the contract can only depend on profits denoted by $w(\pi)$ for $\pi \in \{\pi_H, \pi_L\}$. Let $v_H = v(w(\pi_H)) = \sqrt{w(\pi_H)} \text{ and } v_L = v(w(\pi_L)) = \sqrt{w(\pi_L)}$.\\
+
+For given wage contract $w(\pi)$, denote $v_H = v(w(\pi_H)) = \sqrt{w(\pi_H)} \text{ and } v_L = v(w(\pi_L)) = \sqrt{w(\pi_L)}$. The agent's decision problem is
+
+\begin{align*}
+    \max_e U_A(e; w) =  f(\pi_H|e) v_H + f(\pi_L|e) v_L - g(e)
+\end{align*}
+
+Note that $\frac{U_A(e_1; w) + U_A(e_3; w)}{2} > U_A(e_2; w)$ for all contracts $w(\pi)$. This implies that for any contract $w(\pi)$, either $U_A(e_1; w) > U_A(e_2; w)$ or $U_A(e_3; w) > U_A(e_2; w)$. Therefore, it is impossible to induce efforts $e_2$.\\
+
+To induce efforts $e_2$, there must exists some $v_H, v_H \in \R$ such that 
+\begin{align*}
+    U_A(e_2; w) &\ge \max\{U_A(e_1; w), U_A(e_3; w)\}\\
+    \implies g(e_2)-\frac{4}{3} \le \frac{v_H - v_L}{6} \le \frac{5}{3} - g(e_2)
+\end{align*}
+
+or equivalently $g(e_2) \le \frac{3}{2}$.
+
+\subsection*{Part c}
+The induced effort as a function of wage contract is 
+$$e(w)  =\begin{cases}
+    0 ~~~ \text{if}~ \frac{2}{3}v_H + \frac{1}{3}v_L - \frac{5}{3} \le 0 ~\text{and}~\frac{1}{3}v_H + \frac{2}{3}v_L - \frac{4}{3} \le 0 \\
+    e_1~~~\text{if}~v_H - v_L \ge 1 ~\text{and}~ \frac{2}{3}v_H + \frac{1}{3}v_L - \frac{5}{3} \ge 0\\
+    e_3~~~\text{if}~v_H - v_L < 1 ~\text{and}~\frac{1}{3}v_H + \frac{2}{3}v_L - \frac{4}{3} \ge 0\\
+\end{cases}$$
+
+Therefore, the principal's expected payoff is 
+\begin{align*}
+    U_P(w) &= f(\pi_H|e(w))(\pi_H - v_H^2) + f(\pi_L|e(w))(\pi_L - v_L^2)\\
+    &= \begin{cases}
+        0 ~~~ \text{if}~ \frac{2}{3}v_H + \frac{1}{3}v_L - \frac{5}{3} \le 0 ~\text{and}~\frac{1}{3}v_H + \frac{2}{3}v_L - \frac{4}{3} \le 0 \\
+        \frac{2}{3}(10-v_H^2) + \frac{1}{3}(-v_L^2)~~~\text{if}~v_H - v_L \ge 1 ~\text{and}~ \frac{2}{3}v_H + \frac{1}{3}v_L - \frac{5}{3} \ge 0\\
+        \frac{1}{3}(10-v_H^2) + \frac{2}{3}(-v_L^2)~~~\text{if}~v_H - v_L < 1 ~\text{and}~\frac{1}{3}v_H + \frac{2}{3}v_L - \frac{4}{3} \ge 0\\
+    \end{cases}
+\end{align*}
+
+This is optimized at $w(\pi_H) = 4$ and $w(\pi_L) = 1$. This is the optimal contract.

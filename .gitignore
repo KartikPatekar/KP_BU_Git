@@ -1,1 +1,3 @@
-PSets/EC704B/PSet1/Q2/Data/cps_00007.dat.gz 
+## Ignore all data files
+
+PSets/EC704B/PSet1/Q2/Data/* 

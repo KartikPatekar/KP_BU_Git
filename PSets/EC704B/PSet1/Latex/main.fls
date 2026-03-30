@@ -1,8 +1,8 @@
-PWD g:/My Drive/PhD_Coursework/26Spring/EC704B_MacroTheory2/ProblemSets/PSet1/Latex
+PWD g:/My Drive/PhD_Coursework/KP_BU_Git/PSets/EC704B/PSet1/Latex
 INPUT c:/SoftwareZ/texlive/2026/texmf.cnf
 INPUT c:/SoftwareZ/texlive/2026/texmf-dist/web2c/texmf.cnf
 INPUT c:/SoftwareZ/texlive/2026/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT g:/My Drive/PhD_Coursework/26Spring/EC704B_MacroTheory2/ProblemSets/PSet1/Latex/main.tex
+INPUT g:/My Drive/PhD_Coursework/KP_BU_Git/PSets/EC704B/PSet1/Latex/main.tex
 OUTPUT main.log
 INPUT c:/SoftwareZ/texlive/2026/texmf-dist/tex/latex/base/article.cls
 INPUT c:/SoftwareZ/texlive/2026/texmf-dist/tex/latex/base/article.cls
@@ -167,6 +167,26 @@ INPUT ./Figures/plot_q2_4_decomp_changes.pdf
 INPUT ./Exercises/ex3.tex
 INPUT ./Exercises/ex3.tex
 INPUT Exercises/ex3.tex
+INPUT ./Figures/plot_q3_part3_sim_b_0.4.pdf
+INPUT ./Figures/plot_q3_part3_sim_b_0.4.pdf
+INPUT ./Figures/plot_q3_part3_sim_b_0.4.pdf
+INPUT ./Figures/plot_q3_part3_sim_b_0.4.pdf
+INPUT ./Figures/plot_q3_part3_sim_b_0.4.pdf
+INPUT ./Figures/plot_q3_part3_sim_b_0.95.pdf
+INPUT ./Figures/plot_q3_part3_sim_b_0.95.pdf
+INPUT ./Figures/plot_q3_part3_sim_b_0.95.pdf
+INPUT ./Figures/plot_q3_part3_sim_b_0.95.pdf
+INPUT ./Figures/plot_q3_part3_sim_b_0.95.pdf
+INPUT ./Figures/plot_q3_part5_sim.pdf
+INPUT ./Figures/plot_q3_part5_sim.pdf
+INPUT ./Figures/plot_q3_part5_sim.pdf
+INPUT ./Figures/plot_q3_part5_sim.pdf
+INPUT ./Figures/plot_q3_part5_sim.pdf
+INPUT ./Figures/plot_q3_part6_sim.pdf
+INPUT ./Figures/plot_q3_part6_sim.pdf
+INPUT ./Figures/plot_q3_part6_sim.pdf
+INPUT ./Figures/plot_q3_part6_sim.pdf
+INPUT ./Figures/plot_q3_part6_sim.pdf
 INPUT main.aux
 INPUT c:/SoftwareZ/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT c:/SoftwareZ/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
@@ -175,7 +195,9 @@ INPUT c:/SoftwareZ/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10
 INPUT c:/SoftwareZ/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb
 INPUT c:/SoftwareZ/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
 INPUT c:/SoftwareZ/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
+INPUT c:/SoftwareZ/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb
 INPUT c:/SoftwareZ/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
 INPUT c:/SoftwareZ/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT c:/SoftwareZ/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb
 INPUT c:/SoftwareZ/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
+INPUT c:/SoftwareZ/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb

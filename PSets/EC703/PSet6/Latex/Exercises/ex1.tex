@@ -1,0 +1,18 @@
+\subsection*{Part a}
+
+Suppose receiver has a (potentially) mixed strategy $\sigma_R(a| m)$ for any message $m$.  Therefore, if the true state is $\omega$ and sender sends message $m$ the reciever's expected payoff is 
+
+\begin{align*}
+    \mathbb E_{\omega|m}\left[\mathbb E_{a \sim \sigma_R} [-(a-\omega)^2] \right] \le \mathbb E_{\omega|m}\left[ -(\mathbb E_{a \sim \sigma_R}[a]-\omega)^2 \right]
+\end{align*}
+
+Therefore, the receiver always have a higher expected payoff for playing pure action $E_{a \sim \sigma_R}[a]$ compared to $\sigma_R(a|m)$. Hence, in equilibrium, the player 2's strategy is a pure strategy given by $a(m)$.
+
+\subsection*{Part b}
+For contradiction, suppose $m$ and $m'$ are two on-path messages with $a(m) > a(m')$. Since the sender has utility $u^S(a, \omega) = a$, message $m$ strictly dominates message $m'$ for any $\omega$. Hence, $m'$ cannot be an on-path message. Therefore, for all on equilibrium path messages from sender, receiver must take the same action $a(m) = constant$.
+
+\subsection*{Part c}
+
+In this problem, the sender's utility does not depend on state $\omega$ and therefore sender always prefers a higher receiver action. This results in sender having no credibility as their preferece for reciever's action does not depend on true state.\\
+
+However, in the Crawford and Sobel (1982) model, sender's preference depend on both agent action and the world state, and therefore they want to convey (possibly biased) state of the world to the reciever. 

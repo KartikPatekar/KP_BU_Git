@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls -la \"g:/My Drive/PhD_Coursework/KP_BU_Git/PSets/EC708/PSet5/Latex/\"*.fdb_latexmk \"g:/My Drive/PhD_Coursework/KP_BU_Git/PSets/EC708/PSet5/Latex/\"*.fls)"
+    ]
+  }
+}

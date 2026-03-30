@@ -1,0 +1,29 @@
+\subsection*{Part a}
+
+Teacher utility: $U_T = w + \gamma e_1 - (e_1 + e_2)^2$\\
+
+Teacher's problem
+
+\begin{align*}
+    U_T^* &= \max_{e_1, e_2} \alpha + \beta e_2  + \gamma e_1 - (e_1 + e_2)^2\\
+    &s.t.~~~~ e_1\ge 0, e_2 \ge 0
+\end{align*}
+
+which gives optimal efforts FOC with KKT conditions 
+\begin{align*}
+    2e^*_2 + 2e^*_1 = \beta + \mu_2= \gamma  + \mu_1 
+\end{align*}
+
+and complementary slackness $\mu_1 e_1 = \mu_2 e_2 = 0$. The solutions are 
+
+\begin{align*}
+    (e^*_1, e^*_2) = \begin{cases}
+        (0, 0.5\beta)~~~~~~~~~~~~~~~~~~~~~~~~~~~\text{if}~ \beta > \gamma\\
+        (0.5\gamma, 0)~~~~~~~~~~~~~~~~~~~~~~~~~~~\text{if}~ \beta < \gamma\\
+        \{(x, y)\in \R_{+}^2: 2(x+y) = \beta\}~~~\text{if}~ \beta = \gamma\\
+    \end{cases}
+\end{align*}
+
+\subsection*{Part b}
+
+The above solution show that teacher only puts efforts on the task that is more profitable since they have same costs. Therefore, if school puts too much weight on test scores, teacher will only put efforts on test schore and no effort on true teaching.
