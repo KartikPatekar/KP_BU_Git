@@ -6,7 +6,7 @@ s     <- 0.02
 b     <- 0.95
 gamma <- 0.5
 iota  <- 1.6
-c     <- 0.1073
+cc     <- 0.1073
 pi    <- 0.985
 z_h   <- exp(0.01)
 z_l   <- exp(-0.01)
@@ -17,10 +17,10 @@ equations <- function(x) {
   Jh      <- x[3]
   Jl      <- x[4]
 
-  eq1 <- (c / beta) * (1 + theta_h^iota)^(1 / iota) - (pi * Jh + (1 - pi) * Jl)
-  eq2 <- (c / beta) * (1 + theta_l^iota)^(1 / iota) - (pi * Jl + (1 - pi) * Jh)
-  eq3 <- Jh - ((1 - gamma) * (z_h - b) - gamma * c * theta_h + beta * (1 - s) * (pi * Jh + (1 - pi) * Jl))
-  eq4 <- Jl - ((1 - gamma) * (z_l - b) - gamma * c * theta_l + beta * (1 - s) * (pi * Jl + (1 - pi) * Jh))
+  eq1 <- (cc / beta) * (1 + theta_h^iota)^(1 / iota) - (pi * Jh + (1 - pi) * Jl)
+  eq2 <- (cc / beta) * (1 + theta_l^iota)^(1 / iota) - (pi * Jl + (1 - pi) * Jh)
+  eq3 <- Jh - ((1 - gamma) * (z_h - b) - gamma * cc * theta_h + beta * (1 - s) * (pi * Jh + (1 - pi) * Jl))
+  eq4 <- Jl - ((1 - gamma) * (z_l - b) - gamma * cc * theta_l + beta * (1 - s) * (pi * Jl + (1 - pi) * Jh))
 
   return(c(eq1, eq2, eq3, eq4))
 }

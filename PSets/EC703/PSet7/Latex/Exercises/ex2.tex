@@ -1,0 +1,48 @@
+Let the price by $w$ corresponding to cutoff $\theta^*$. If $r(\theta^*) \in [\underline \theta, \bar \theta]$, by the zero profit condition
+
+\begin{align*}
+    r(\theta^*) &= w = \mathbb E [\theta | \theta \le \theta^*] = \frac{\theta^* + \underline \theta}{2}\\
+    \implies a \theta^* &= \frac{\theta^* + \underline \theta}{2} \\
+    \implies \theta^* &= \frac{\underline \theta}{2a - 1} 
+\end{align*}
+
+Therefore, the equilibrium price and the average quality is  
+\begin{align*}
+    w = \begin{cases}
+        \frac{a \underline \theta}{2a - 1} ~~~\text{if}~ \frac{\bar \theta + \underline \theta}{2\bar \theta} \le a < 1 \\
+        \frac{\bar \theta + \underline \theta}{2}  ~~~\text{if}~ 0 < a < \frac{\bar \theta + \underline \theta}{2\bar \theta}
+    \end{cases}
+\end{align*}
+
+\textbf{Uniqueness of equilibrium: } For any cut off ability $\theta^*$, both the outside option and the average quality of worker increases linearly in $\theta^*$. Hence they cross either zero or one time. If the outside option value and average quality does not cross, the firm wants to hire everyone (as $a<1$) and zero profit condition implies they must pay wage equalling average ability.
+
+\subsection*{Comparitive Statitistics}
+
+For $a < \frac{\bar \theta + \underline \theta}{2\bar \theta}$, the firms hires everyone and the price does not change. For $a \ge \frac{\bar \theta + \underline \theta}{2\bar \theta}$, outside option of high ability worker increases and there is adverse selection. Therefore, firms lower prices.
+
+As $\underline \theta$ increases, the productivity of lowest ability worker rises, and therefore wage rises.
+
+If $a < \frac{\bar \theta + \underline \theta}{2\bar \theta}$, firms hire everyone. An increase in $\bar \theta$ raises average ability, and therefore increases price. If $a \ge \frac{\bar \theta + \underline \theta}{2\bar \theta}$, the price does not change with $\bar \theta$. 
+
+\subsection*{Special case: $\underline{\theta} = 0$}
+If $a < 0.5$, then $r(\theta^*) < \mathbb E [\theta | \theta \le \theta^*] $ for all $\theta^*$. Therefore, all workers are hired, and $w = \frac{\bar \theta}{2}$.
+
+If $a > 0.5$, then $r(\theta^*) > \mathbb E [\theta | \theta \le \theta^*] $ for all $\theta^*$. For any wage, only very low ability workers take the job and average productivity is always lower than the wage. Therefore, the firm does not hire anyone and sets $w = 0$.
+
+If $a = 0.5$, then $r(\theta^*) = \mathbb E [\theta | \theta \le \theta^*] $ for all $\theta^*$. Therefore, any wage between $[0, \bar \theta/2]$ constitutes a competitive equilibrium. 
+
+\subsection*{Special case: $\theta \sim \mathcal U[0,1], r(\theta) = a\theta - b$}
+
+Assuming cutoff $\theta^*$ for wage $w$ such that $r(\theta^*) \in [0, 1]$, we have:
+
+\begin{align*}
+    r(\theta^*) &= w = \mathbb E [\theta | \theta \le \theta^*] \\
+    \implies a \theta^* - b &= \frac{\theta^* }{2} 
+\end{align*}
+
+Note that $LHS < 0 = RHS$ for $\theta^* = 0$ and $LHS > RHS$ for $\theta^* = 1$. Therefore, there exists a unique $\theta^* \in (0,1)$ satisfying the above equation
+
+\begin{align*}
+    \theta^* &= \frac{2b}{2a - 1}\\
+    w &= \frac{b}{2a-1}
+\end{align*}

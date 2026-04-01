@@ -1,0 +1,56 @@
+\subsection*{Part a}
+
+\begin{align*}
+    \mathbb P(\text{agent 1 wins}) &= \mathbb P(y_1 > y_2) = \mathbb P(e_1 - e_2 + \varepsilon_1 - \varepsilon_2 > 0)
+\end{align*}
+
+Therefore, for given agent efforts $e_1, e_2$, the probability of agent 1 winning is independent of common shock $\eta$.
+
+\subsection*{Part b}
+
+In equilibrium, we have 
+\begin{align*}
+    e_1^* &\in \operatorname{argmax}_{e_1} \mathbb P(\varepsilon_2 - \varepsilon_1 \le e_1 - e_2^*)(\sqrt{ W_H} - \sqrt{ W_L}) + \sqrt{ W_L} - e_1\\
+    e_2^* &\in \operatorname{argmax}_{e_2} \mathbb P(\varepsilon_1 - \varepsilon_2 \le e_2 - e_1^*)(\sqrt{ W_H} - \sqrt{ W_L}) + \sqrt{ W_L} - e_2\\
+\end{align*}
+
+Since $\varepsilon_1, \varepsilon_2$ are i.i.d. standard normal, we have $\varepsilon_1 - \varepsilon_2 \sim \mathcal{N}(0, 2 \sigma^2)$. Thus, we can rewrite the equations as
+
+\begin{align*}
+    e_1^* &\in \operatorname{argmax}_{e_1} \Phi\left(\frac{e_1 - e_2^*}{\sigma\sqrt 2}\right)(\sqrt{ W_H} - \sqrt{ W_L}) + \sqrt{ W_L} - \frac{e_1^2}{2}\\
+    e_2^* &\in \operatorname{argmax}_{e_2} \Phi\left(\frac{e_2 - e_1^*}{\sigma\sqrt 2}\right)(\sqrt{ W_H} - \sqrt{ W_L}) + \sqrt{ W_L} - \frac{e_2^2}{2}\\
+\end{align*}
+
+The first order conditions are 
+\begin{align*}
+    \frac{1}{\sigma\sqrt 2}\phi\left(\frac{e_1^* - e_2^*}{\sigma\sqrt 2}\right)(\sqrt{ W_H} - \sqrt{ W_L}) &= e_1^*\\
+    \frac{1}{\sigma\sqrt 2}\phi\left(\frac{e_2^* - e_1^*}{\sigma\sqrt 2}\right)(\sqrt{ W_H} - \sqrt{ W_L}) &= e_2^*\\
+\end{align*}
+
+For symmetric equilibrium, we have 
+\begin{align*}
+    e^* = e_1^* = e_2^* = \frac{\sqrt{ W_H} - \sqrt{ W_L}}{2\sigma \sqrt \pi}
+\end{align*}
+
+\subsection*{Part c}
+
+The principal's problem is to maximize
+\begin{align*}
+    \max_{e} & ~ 2e - W_H - W_L\\
+    &~~~s.t.~~ \frac12(\sqrt{ W_H} + \sqrt{ W_L}) - \frac12 e^2 \ge \bar u 
+\end{align*}
+
+\subsection*{Part d}
+The principal's optimization problem does not depend on variance of noise $\eta$. Therefore, $e^*$ does not depend on variance of noice $\eta$. The principal's expected payoff is $2e^* - W_H - W_L$, which is independent of noice variance.
+
+
+The principal's expected payoff is 
+\begin{align*}
+    2\sqrt{\sqrt{ W_H} + \sqrt{ W_L} - 2\bar u}- W_H - W_L
+\end{align*}
+
+The agent's efforts ar given by
+$$ e^* = \sqrt{\sqrt{ W_H} + \sqrt{ W_L} - 2\bar u}$$
+
+\subsection*{Part e}
+

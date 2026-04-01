@@ -1,0 +1,61 @@
+\subsection*{Part a}
+
+Suppose bank overserves the entrepreneur type $p \in \{p_l, p_h\}$ and sets corresponding rate $r \in \{r_l, r_h\}$. Bank's expected payoff conditional on making the loan is 
+
+\begin{align*}
+    EU^B(\text{Offer loan}) = p (1+r) L
+\end{align*}
+
+By zero expected profit condition, $EU^B(\text{Offer loan}) = EU^B(\text{Not offer loan})$, and hence the interest rates offered are 
+\begin{align*}
+    r_h = \frac{1}{p_h} - 1~~~, ~~~ r_l = \frac{1}{p_l} - 1
+\end{align*}
+
+Expected payoff for entrepreneur if they take the loan is 
+
+\begin{align*}
+    EU^E(\text{Take loan})  = p(S - (1+r)L) + (1-p)D
+\end{align*}
+
+Entrepreneur takes the loan if $EU^E(\text{Take loan}) \ge EU^E(\text{Not take loan}) $, which gives 
+\begin{align*}
+    p(S - L/p) + (1-p)D &\ge 0 \\
+    \implies p &\ge \frac{L-D}{S-D}
+\end{align*}
+
+Since this condition is satisfied for both types of entrepreneurs, all the entrepreneurs will take the loan.
+
+\subsection*{Part b}
+
+Bank can only set one interest rate $r$. 
+
+An entrepreneur with success probability $p$ will accept the loan if 
+\begin{align*}
+    EU^E(\text{Take loan}) &\ge EU^E(\text{Not take loan}) \\
+    \implies p(S - (1+r)L) + (1-p)D &\ge 0\\
+    \implies \frac{1}{1+r} \ge \frac{p L}{p S + (1-p)D}
+\end{align*}
+
+Since $S-D > L > 0$, the RHS is incresaing in $p$. Hence, if good types take the loan, then bad types also take the loan, but not vice versa.
+
+\textbf{Case 1: Both types of entrepreneurs take loan in equilibrium}\\
+
+Bank's expected payoff conditional on making the loan is
+
+\begin{align*}
+    EU^B(\text{Offer loan}) &= [\lambda p_h  + (1- \lambda)p_l ] (1+r) L\\
+    EU^B(\text{Offer loan}) &= EU^B(\text{Not offer loan}) \implies 1+r = \frac{1}{\lambda p_h  + (1- \lambda)p_l } 
+\end{align*}
+
+An entrepreneur with success probability $p$ will accept the loan if 
+\begin{align*}
+    \lambda p_h  + (1- \lambda)p_l \ge \frac{p L}{p S + (1-p)D}
+\end{align*}
+
+According to given condition, good entrepreneur does not take the loan. Therefore, a pooling equilibrium is not possible.
+
+\textbf{Case 2: Only bad type entrepreneurs take loan in equilibrium}\\
+
+As solved in part a, the bank sets the interest rate $r = \frac{1}{p_l}-1$. This is greater than interest rate in Case 1 above, and therefore only bad types take the loan while the good types do not take the loan.\\
+
+Hence, there is a unique equilibrium which shows moral hazard problem. Due to incomplete information, bank cannot proftably lend to good entrepreneurs. 
