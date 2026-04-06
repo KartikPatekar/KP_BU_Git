@@ -2,20 +2,20 @@
 \subsection*{Part 1}
 
 \begin{align*}
-    u = 0.05 \implies f(\theta) = s\frac{1-u}{u} = 0.36\\
+    u = 0.05 \implies f(\theta) = s\frac{1-u}{u} = 0.38\\
 \end{align*}
 
 \begin{align*}
     f(\theta) &= M(1, \theta) = \frac{\theta}{(1+\theta^\iota)^{1/\iota}}\\
-    \implies \theta = 0.4123
+    \implies \theta = 0.4414
 \end{align*}
 
-Hence $\theta = 0.4123$ is consistent with $u = 0.05$.\\
+Hence $\theta = 0.4414$ is consistent with $u = 0.05$.\\
 
 From the free entry and wage condition in steady state
 \begin{align*}
     c &= \beta q(\theta) \frac{1}{1 - \beta(1 - s)} [(1 - \gamma)(z - b) - \gamma \theta c]\\
-    \implies c &= 1.288
+    \implies c &= 1.211
 \end{align*}
 
 
@@ -66,7 +66,7 @@ J(z,u) &= z - w(z,u) + \beta(1-s) \mathbb{E}_{z',u'} [J(z',u')|z] \\
 \end{align*}
 where $w(z,u) = (1-\gamma)b + \gamma(z + \theta(z,u)c)$.\\
 
-$\theta(z, u)$ and $J(z, u)$ do not depend on u, so that we can write $\theta(z)$ and $J(z)$. WHY?\\
+Substituting the formul for $J(z,u)$ and $w(z,u)$ in first equation gives two relationships between $c$, $z_h$, $z_l$, $\theta(z_h, u)$ and $\theta(z_l, u)$. For fixed $c$, since these equations do not directly depend on $u$, $\theta$ is a function of $z$ only. Hence, $w$ also does not directly depend on $u$, and $J(z,u)$ is a function of $z$ only. We can write $\theta(z)$ and $J(z)$.
 
 We have
 \begin{align*}
@@ -84,10 +84,10 @@ The 4 equations in terms of $\{\theta(z_l ), \theta(z_h), J(z_l ), J(z_h)\}$ are
 
 Solving these gives
 \begin{align*}
-    \theta(z_h) &= 0.419631 \\
-    \theta(z_l) &= 0.404967 \\
-    J(z_h) & = 1.485272 \\
-    J(z_l) & = 1.474688 \\
+    \theta(z_h) &=  0.448925 \\
+    \theta(z_l) &= 0.433358 \\
+    J(z_h) & = 1.416369 \\
+    J(z_l) & = 1.405458 \\
 \end{align*}
 
 
@@ -99,6 +99,8 @@ The simulation results are in figure \ref{fig:q3_sim_b0.4}. The standard deviati
     sd(\log \theta_t) &= 0.018\\    
 \end{align*}
 
+Assuming perfect correlation, $|d\log u| \approx 1.3 |d\log u|$, which is much smaller than the value overserved in data.
+
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\textwidth]{Figures/plot_q3_part3_sim_b_0.4.pdf}
@@ -107,24 +109,25 @@ The simulation results are in figure \ref{fig:q3_sim_b0.4}. The standard deviati
 \end{figure}
 
 \subsection*{Part 4}
-With $b = 0.96$, we have the new params
+With $b = 0.95$, we have the new params
 
 \begin{align*}
-    c &=  0.1073\\
-    \theta(z_h) &= 0.500729 \\
-    \theta(z_l) &= 0.324690 \\
-    J(z_h) & = 0.128870 \\
-    J(z_l) & = 0.118311 \\
+    c &=  0.101\\
+    \theta(z_h) &= 0.534409 \\
+    \theta(z_l) &= 0.347724 \\
+    J(z_h) & = 0.123372 \\
+    J(z_l) & = 0.112493 \\
 \end{align*}
 
 the simulation results are in figure \ref{fig:q3_sim_b0.95}. The standard deviations are 
 \begin{align*}
     sd(\log z_t) &= 0.010\\
-    sd(\log u_t) &= 0.160\\
-    sd(\log v_t) &= 0.082\\
-    sd(\log \theta_t) &= 0.217\\    
+    sd(\log u_t) &= 0.156\\
+    sd(\log v_t) &= 0.083\\
+    sd(\log \theta_t) &= 0.215\\    
 \end{align*}
 
+This restores $|d\log u| \approx 15.6 |d\log u|$, which is more closer to the value observed in the data. Therefore, considering outside option to be larger and closer to worker productivity seem to resolve the Shimer puzzle.
 
 \begin{figure}[H]
     \centering
@@ -146,9 +149,9 @@ Let flow utility be $b= \bar b z_t$. Then the 4 equations are
 
 which gives the solutions
 \begin{align*}
-    c &=  0.1073\\
-    \theta(z_h) &= 0.416790 \\
-    \theta(z_l) &= 0.407990 \\
+    c &=  0.101\\
+    \theta(z_h) &= 0.445394 \\
+    \theta(z_l) &= 0.436061 \\
 \end{align*}
 
 
@@ -159,6 +162,8 @@ the simulation results are in figure \ref{fig:q3_sim_part5}. The standard deviat
     sd(\log v_t) &= 0.004\\
     sd(\log \theta_t) &= 0.011\\    
 \end{align*}
+
+Now we only have $|d\log u| \approx 0.8 |d\log u|$, which worsens the Shimer puzzle. If the outside option is worse during a downturn, then worker becomes more likely to work for lower wage which counters the unemployment effect of low productivity.
 
 \begin{figure}[H]
     \centering
@@ -179,21 +184,30 @@ Let rigid wages be $w_t = \bar w = 0.95$. Then the 4 equations are
     J(z_l) &= z_l - \bar w + \beta (1-s)[\pi J(z_l) + (1-\pi) J(z_h)]\\    
 \end{align*}
 
+Also, fixed wages, formula for $c$ in steady state changes and can be computed by equations (3-4) and (3-5)
+\begin{align*}
+    J(z) &= \frac{z-\bar w}{1-\beta(1-s)}\\
+    c &= \beta q(\theta)\times \frac{z-\bar w}{1-\beta(1-s)}
+\end{align*}
+Using $\theta = 0.4414$ as before gives $c= 1.887$ 
+
 which gives the solutions
 \begin{align*}
-    c &=  0.1073\\
-    \theta(z_h) &= 21.540219 \\
-    \theta(z_l) &= 18.105566 \\
+    c &=  1.840\\
+    \theta(z_h) &= 0.607849 \\
+    \theta(z_l) &= 0.239225 \\
 \end{align*}
 
 
 the simulation results are in figure \ref{fig:q3_sim_part6}. The standard deviations are 
 \begin{align*}
     sd(\log z_t) &= 0.010\\
-    sd(\log u_t) &= 0.0007\\
-    sd(\log v_t) &= 0.086\\
-    sd(\log \theta_t) &= 0.087\\    
+    sd(\log u_t) &= 0.344\\
+    sd(\log v_t) &= 0.180\\
+    sd(\log \theta_t) &= 0.466\\    
 \end{align*}
+
+This shows that completely rigid wages solve the Shimer puzzle, bringing $|d\log u| \approx 0.8 |d\log u|$. With rigid wages, firm's value function of a filled position fluctuates a lot with worker productivity, which results in more firms closing down during recession and more vacancies being created in boom.
 
 \begin{figure}[H]
     \centering

@@ -1,8 +1,8 @@
 # Fdb version 4
-["pdflatex"] 1774839356.9223 "g:/My Drive/PhD_Coursework/KP_BU_Git/PSets/EC704B/PSet1/Latex/main.tex" "main.pdf" "main" 1774839362.77038 0
+["pdflatex"] 1775073143.26138 "g:/My Drive/PhD_Coursework/KP_BU_Git/PSets/EC704B/PSet1/Latex/main.tex" "main.pdf" "main" 1775073150.02396 0
   "Exercises/ex1.tex" 1774297238 1982 969f26950f3c30da25c2d12d1d0ed4be ""
   "Exercises/ex2.tex" 1774458154 7814 2d95452ae6ac1a886eb33468b7b254e0 ""
-  "Exercises/ex3.tex" 1774839354 6082 80987a063b99ec75e3473013dfcd4415 ""
+  "Exercises/ex3.tex" 1775073071 7585 a61118a61eb45177c03c9c8ce9fbcb06 ""
   "Figures/plot_q2_1_urate_by_educ.pdf" 1774403682 13390 66af88a41c7e08655f6ef19c069e0fdd ""
   "Figures/plot_q2_2_Fm_by_educ.pdf" 1774403873 13206 b90e229aacf1b1db276f7748edb7ea83 ""
   "Figures/plot_q2_2_Sm_by_educ.pdf" 1774403874 12616 30a2da14ed38850a41a9a28c68de9475 ""
@@ -12,10 +12,10 @@
   "Figures/plot_q2_3_sm_by_educ.pdf" 1774403877 12698 a06f108f10b4ba39acda6f9e3b8edeff ""
   "Figures/plot_q2_4_decomp_changes.pdf" 1774404987 8421 e2996b82d8893c3d9a134368e2e721bd ""
   "Figures/plot_q2_4_decomp_levels.pdf" 1774404986 8411 8b2fa7657fec82d1812882cbd6fab5a7 ""
-  "Figures/plot_q3_part3_sim_b_0.4.pdf" 1774837335 31699 20ddfbf59fe3d733ee6a7bf4a79f3013 ""
-  "Figures/plot_q3_part3_sim_b_0.95.pdf" 1774838051 31793 958dc35814f5327bd8f78c9d6c567c24 ""
-  "Figures/plot_q3_part5_sim.pdf" 1774838780 31623 57a467cd0bae4b77e43f91e82ccbaf9f ""
-  "Figures/plot_q3_part6_sim.pdf" 1774838772 29133 d29d30d6b2815ed6993b6b449f998058 ""
+  "Figures/plot_q3_part3_sim_b_0.4.pdf" 1775064283 32644 3e7ff6a17c8dcd23afdff2b3cede8758 ""
+  "Figures/plot_q3_part3_sim_b_0.95.pdf" 1774838396 31793 5e758c24391faeabd3cef25809632150 ""
+  "Figures/plot_q3_part5_sim.pdf" 1775064766 31539 6e6249a641e2f1820afb7106e5aef193 ""
+  "Figures/plot_q3_part6_sim.pdf" 1775072991 32083 68f0b9af1b8cead50c87a4f8d166a9d6 ""
   "c:/SoftwareZ/texlive/2026/texmf-dist/fonts/map/fontname/texfonts.map" 1774234632 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/SoftwareZ/texlive/2026/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1774231338 1004 54797486969f23fa377b128694d548df ""
   "c:/SoftwareZ/texlive/2026/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1774231338 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -89,7 +89,7 @@
   "c:/SoftwareZ/texlive/2026/texmf-var/web2c/pdftex/pdflatex.fmt" 1774243441 3636686 9289ac9fdaedd7dbca146321adfa937b ""
   "c:/SoftwareZ/texlive/2026/texmf.cnf" 1774243169 713 e69b156964470283e0530f5060668171 ""
   "g:/My Drive/PhD_Coursework/KP_BU_Git/PSets/EC704B/PSet1/Latex/main.tex" 1774405185 1633 5a22512e27c95d7bf04ba4f7590a513f ""
-  "main.aux" 1774839361 3665 f6b14a70b18bc5c4afafe6b8aee0e74a "pdflatex"
+  "main.aux" 1775073148 3665 483a3f0d0e3491c6d048d10252296b19 "pdflatex"
   "main.tex" 1774405185 1633 5a22512e27c95d7bf04ba4f7590a513f ""
   (generated)
   "main.aux"

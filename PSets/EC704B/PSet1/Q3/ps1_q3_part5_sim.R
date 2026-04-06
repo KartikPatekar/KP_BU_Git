@@ -6,7 +6,7 @@ s     <- 0.02
 b_bar     <- 0.95
 gamma <- 0.5
 iota  <- 1.6
-cc    <- 0.1073        # vacancy posting cost (avoid masking base c())
+cc    <- 0.101        # vacancy posting cost (avoid masking base c())
 pi_z  <- 0.985         # persistence of Markov chain
 z_h   <- exp(0.01)
 z_l   <- exp(-0.01)

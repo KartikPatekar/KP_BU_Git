@@ -4,7 +4,7 @@ library(nleqslv)
 beta  <- 0.96^(1/12)
 s     <- 0.02
 iota  <- 1.6
-cc    <- 0.1073        # vacancy posting cost (avoid masking base c())
+cc    <- 1.840        # vacancy posting cost (avoid masking base c())
 pi_z  <- 0.985         # persistence of Markov chain
 z_h   <- exp(0.01)
 z_l   <- exp(-0.01)

@@ -3,10 +3,10 @@ library(nleqslv)
 # ── Parameters ──
 beta  <- 0.96^(1/12)
 s     <- 0.02
-b     <- 0.95
+b     <- 0.4
 gamma <- 0.5
 iota  <- 1.6
-cc    <- 0.1073        # vacancy posting cost (avoid masking base c())
+cc    <- 1.211        # vacancy posting cost (avoid masking base c())
 pi_z  <- 0.985         # persistence of Markov chain
 z_h   <- exp(0.01)
 z_l   <- exp(-0.01)

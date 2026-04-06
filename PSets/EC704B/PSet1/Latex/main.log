@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.23)  29 MAR 2026 22:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.23)  1 APR 2026 15:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -459,15 +459,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 66--68
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 69--70
-
- []
-
 <Figures/plot_q3_part3_sim_b_0.4.pdf, id=100, 650.43pt x 505.89pt>
 File: Figures/plot_q3_part3_sim_b_0.4.pdf Graphic file (type pdf)
 <use Figures/plot_q3_part3_sim_b_0.4.pdf>
-Package pdftex.def Info: Figures/plot_q3_part3_sim_b_0.4.pdf  used on input line 104.
+Package pdftex.def Info: Figures/plot_q3_part3_sim_b_0.4.pdf  used on input line 106.
 (pdftex.def)             Requested size: 469.75502pt x 365.37524pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -488,7 +483,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 <Figures/plot_q3_part3_sim_b_0.95.pdf, id=115, 650.43pt x 505.89pt>
 File: Figures/plot_q3_part3_sim_b_0.95.pdf Graphic file (type pdf)
 <use Figures/plot_q3_part3_sim_b_0.95.pdf>
-Package pdftex.def Info: Figures/plot_q3_part3_sim_b_0.95.pdf  used on input line 131.
+Package pdftex.def Info: Figures/plot_q3_part3_sim_b_0.95.pdf  used on input line 134.
 (pdftex.def)             Requested size: 469.75502pt x 365.37524pt.
 
 
@@ -502,7 +497,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 <Figures/plot_q3_part5_sim.pdf, id=127, 650.43pt x 505.89pt>
 File: Figures/plot_q3_part5_sim.pdf Graphic file (type pdf)
 <use Figures/plot_q3_part5_sim.pdf>
-Package pdftex.def Info: Figures/plot_q3_part5_sim.pdf  used on input line 165.
+Package pdftex.def Info: Figures/plot_q3_part5_sim.pdf  used on input line 170.
 (pdftex.def)             Requested size: 469.75502pt x 365.37524pt.
 
 
@@ -524,7 +519,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 <Figures/plot_q3_part6_sim.pdf, id=141, 650.43pt x 505.89pt>
 File: Figures/plot_q3_part6_sim.pdf Graphic file (type pdf)
 <use Figures/plot_q3_part6_sim.pdf>
-Package pdftex.def Info: Figures/plot_q3_part6_sim.pdf  used on input line 200.
+Package pdftex.def Info: Figures/plot_q3_part6_sim.pdf  used on input line 214.
 (pdftex.def)             Requested size: 469.75502pt x 365.37524pt.
 )
 
@@ -534,7 +529,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[16 <./Figures/plot_q3_part6_sim.pdf>] (./main.aux)
+[16]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[17 <./Figures/plot_q3_part6_sim.pdf>] (./main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
@@ -553,10 +556,10 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  67i,16n,77p,629b,338s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/SoftwareZ/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/SoftwareZ/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/SoftwareZ/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/SoftwareZ/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/SoftwareZ/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/SoftwareZ/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/SoftwareZ/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/SoftwareZ/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/SoftwareZ/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/SoftwareZ/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/SoftwareZ/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/SoftwareZ/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/SoftwareZ/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (16 pages, 387718 bytes).
+Output written on main.pdf (17 pages, 393521 bytes).
 PDF statistics:
- 208 PDF objects out of 1000 (max. 8388607)
- 136 compressed objects within 2 object streams
+ 211 PDF objects out of 1000 (max. 8388607)
+ 138 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  66 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -10,8 +10,8 @@ Therefore, for given agent efforts $e_1, e_2$, the probability of agent 1 winnin
 
 In equilibrium, we have 
 \begin{align*}
-    e_1^* &\in \operatorname{argmax}_{e_1} \mathbb P(\varepsilon_2 - \varepsilon_1 \le e_1 - e_2^*)(\sqrt{ W_H} - \sqrt{ W_L}) + \sqrt{ W_L} - e_1\\
-    e_2^* &\in \operatorname{argmax}_{e_2} \mathbb P(\varepsilon_1 - \varepsilon_2 \le e_2 - e_1^*)(\sqrt{ W_H} - \sqrt{ W_L}) + \sqrt{ W_L} - e_2\\
+    e_1^* &\in \operatorname{argmax}_{e_1} \mathbb P(\varepsilon_2 - \varepsilon_1 \le e_1 - e_2^*)(\sqrt{ W_H} - \sqrt{ W_L}) + \sqrt{ W_L} - \frac{e_1^2}{2}\\
+    e_2^* &\in \operatorname{argmax}_{e_2} \mathbb P(\varepsilon_1 - \varepsilon_2 \le e_2 - e_1^*)(\sqrt{ W_H} - \sqrt{ W_L}) + \sqrt{ W_L} - \frac{e_2^2}{2}\\
 \end{align*}
 
 Since $\varepsilon_1, \varepsilon_2$ are i.i.d. standard normal, we have $\varepsilon_1 - \varepsilon_2 \sim \mathcal{N}(0, 2 \sigma^2)$. Thus, we can rewrite the equations as
@@ -32,25 +32,31 @@ For symmetric equilibrium, we have
     e^* = e_1^* = e_2^* = \frac{\sqrt{ W_H} - \sqrt{ W_L}}{2\sigma \sqrt \pi}
 \end{align*}
 
+Additionally, the participation constraint is
+\begin{align*}
+    \mathbb P(\varepsilon_2 - \varepsilon_1 \le e^*_1 - e_2^*)(\sqrt{ W_H} - \sqrt{ W_L}) + \sqrt{ W_L} - \frac{(e^*_1)^2}{2} \ge \bar {u}\\
+    \mathbb P(\varepsilon_1 - \varepsilon_2 \le e^*_2 - e_1^*)(\sqrt{ W_H} - \sqrt{ W_L}) + \sqrt{ W_L} - \frac{(e^*_2)^2}{2} \ge \bar {u}\\
+\end{align*}
+
+which reduced to
+$$\frac{\sqrt{ W_H} + \sqrt{ W_L}}{2} - \frac{(e^*)^2}{2} \ge \bar u$$
+
 \subsection*{Part c}
 
 The principal's problem is to maximize
 \begin{align*}
-    \max_{e} & ~ 2e - W_H - W_L\\
-    &~~~s.t.~~ \frac12(\sqrt{ W_H} + \sqrt{ W_L}) - \frac12 e^2 \ge \bar u 
+    \max_{W_H, W_L} & ~ \mathbb E[y_1 + y_2] - W_H - W_L \\
+    \text{s.t.} & ~ \mathbb E[y_1] = \mathbb E[y_2] = e^* = \frac{\sqrt{ W_H} - \sqrt{ W_L}}{2\sigma \sqrt \pi},\\
+    &~~~~~~ \frac{\sqrt{ W_H} + \sqrt{ W_L}}{2} - \frac{(e^*)^2}{2} \ge \bar u , \\
+    &~~~~~~ W_H > W_L 
 \end{align*}
+
 
 \subsection*{Part d}
-The principal's optimization problem does not depend on variance of noise $\eta$. Therefore, $e^*$ does not depend on variance of noice $\eta$. The principal's expected payoff is $2e^* - W_H - W_L$, which is independent of noice variance.
+The principal's optimization problem does not depend on variance of noise $\eta$. Therefore, $W_H$ and $W_L$ does not depend on variance of noice $\eta$ and also payoff is independent.
 
-
-The principal's expected payoff is 
-\begin{align*}
-    2\sqrt{\sqrt{ W_H} + \sqrt{ W_L} - 2\bar u}- W_H - W_L
-\end{align*}
-
-The agent's efforts ar given by
-$$ e^* = \sqrt{\sqrt{ W_H} + \sqrt{ W_L} - 2\bar u}$$
 
 \subsection*{Part e}
+For individual contracts, the principal must pay high bonus for high output to both agents to induce high efforts. However, in the tournament, high bonus only for one of the agents is sufficient to induce high effort for both agents. Since the required bonus to induce high efforts increases with $\sigma$, for high $\sigma$ the payment to both the players will become larger than the payment to winner in the tournament.\\
 
+In presence of a common shock $\eta$, in the tounrmanet, the principal can pay participants independently of their common shock. Hence, principal does not need to pay the risk premium for the common shock, and can therefore incentivize high efforts with lower payment. In individual contracts based on output, the principal must compensate for the risk premium. For concreteness, assume that $\eta$ has a very high variance, so output is not indicative of efforts. In this case, the principal cannot induce high efforts easily for independent contracts, but can still do so using competitive tournament.

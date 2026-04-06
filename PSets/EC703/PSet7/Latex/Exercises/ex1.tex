@@ -1,0 +1,50 @@
+\subsection*{Part a}
+
+Total expected surplus is
+$$ V(e) = ey_H + (1-e)y_L - c(e)$$
+
+Maximizing this over $e\in [0,1]$ gives
+\begin{align*}
+    e^{FB} &= \frac{y_H - y_L}{m}\\
+    V^{FB} &= y_L + \frac{(y_H - y_L)^2}{2m}
+\end{align*}
+
+\subsection*{Part b}
+For a singly period, the expected flow payoff of the principal upon following the contract is 
+\begin{align*}
+    V^P = -(s+b) + e^{FB}y_H + (1-e^{FB})y_L = y_L - s - b + \frac{(y_H - y_L)^2}{m}
+\end{align*}
+
+
+Suppose agent believes that principal will pay the bonus if $y_H$ is realized. The agent's expected payoff for exerting effort $e$ is
+\begin{align*}
+    V^A(e) = s + be - c(e)
+\end{align*}
+
+which implies that agent exerts first best efforts only if
+$$ b = me^{FB} = y_H - y_L$$
+i.e. the bonus is equal to the difference in output between high and low effort levels.
+
+Additionally, agent's participation constraint is 
+\begin{align*}
+    V^A(e^{FB}) &\ge 0\\
+    \implies s &\ge - \frac{(y_H - y_L)^2}{2m} 
+\end{align*}
+
+\subsection*{Part c}
+
+Suppose that output realized in $y_H$. Expected payoff of principal by paying the bonus $b$ and continuing the relationship is 
+\begin{align*}
+    U^P(\text{pay bonus given output $y_H$}) &= -b(1-\delta) + \delta\left( y_L - s - be^{FB} + \frac{(y_H - y_L)^2}{m} \right)
+\end{align*}
+
+therefore, the principal will pay bonus after realizing high efforts only if
+\begin{align*}
+    U^P&(\text{pay bonus given output $y_H$}) \ge 0 \\
+    b &\le \frac{\delta}{1-\delta}\left( y_L - s - \frac{(y_H - y_L)^2}{m} \right)
+\end{align*}
+
+Using $b = y_H - y_L$ and $s\ge - \frac{(y_H - y_L)^2}{2m} $, the First best level is sustainable if 
+\begin{align*}
+    y_H - y_L \le \frac{\delta}{1-\delta}\left( y_L  + \frac{(y_H - y_L)^2}{m} \right) = \frac{\delta}{1-\delta}V^{FB}
+\end{align*}
