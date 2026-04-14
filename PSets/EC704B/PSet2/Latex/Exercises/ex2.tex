@@ -1,0 +1,113 @@
+\subsection*{Part 1}
+
+Let us denote the unemployment shares of $g$ type workers by $u_g$. The total unemployment is the economu is given by $u = 0.5 u_1 + 0.5u_2$. The market tightness is $\theta = \frac{v}{u}$. \\ 
+
+In the McGall + DMP model with homogenous workers, the wage is given by $w(z) = \gamma z + (1-\gamma)rU$. With heterogenous workers, since $U_g$ is different for differnet worker types, the wage would vary according to worker type. Intuitively, if firms match with worker with more outside option, firms would be villing to pay more to avoid the risk of bearing vacancy cost. \\
+
+The flow value of a filled job with worker of tpye $g$ is 
+\begin{equation}
+    (r+s) J_g(z)  = z - w_g(z) + sV
+\end{equation}
+
+The flow value of a vacancy is 
+\begin{equation}
+    rV = -c + A q(\theta)\left[ \frac{u_1}{u_1 + u_2}\int \max\{J_1(z)-V, 0\}dG(z)  + \frac{u_2}{u_1 + u_2}\int \max\{J_2(z)-V, 0\}dG(z) \right]
+\end{equation}
+
+The flow value of unemployed worker of type $g$ is 
+
+\begin{equation}
+    rU_g = b_g + A f(\theta) \int \max\{E_g(z)-U_g, 0\}dG(z)
+\end{equation}
+
+The flow value of employed worker of type $g$ is 
+
+\begin{equation}
+    (r+s)E_g(z) = w_g(z) + sU_g
+\end{equation}
+
+Free entry conditions imply that $$V = 0$$
+
+The surplus of match between a firm and type $g$ worker is
+\begin{equation}
+    S_g(z) = \frac{z}{r+s} - \frac{r}{r+s}U_g
+\end{equation}
+
+The reservation match quality for type $g$ worker satisfies $S(z^R_g) = 0$, which gives 
+$$z^R_g = rU_g$$
+
+We have the following steady state equilibrium conditions
+
+\begin{align}
+    z^R_1 - b_1 &= \frac{\gamma A f(\theta)}{r+s} \int_{z^R_1} (z-z^R_1 ) dG(z)\label{eq:q2_ss_zr1}\\
+    z^R_2 - b_2 &= \frac{\gamma A f(\theta)}{r+s} \int_{z^R_2} (z-z^R_2 ) dG(z)\label{eq:q2_ss_zr2}\\
+    c &= \frac{(1-\gamma) A q(\theta)}{r+s}\left[ \frac{u_1}{u_1 + u_2}\int_{z^R_1} (z-z^R_1 ) dG(z)  + \frac{u_2}{u_1 + u_2}\int_{z^R_2} (z-z^R_2 ) dG(z) \right]\label{eq:q2_ss_c}
+\end{align}
+
+Additionally, the steady state employment levels are given by 
+\begin{align}
+    \frac{1-u_1}{u_1} &= \frac{Af(\theta)(1-G(z_1^R))}{s}\label{eq:q2_ss_u1}\\
+    \frac{1-u_2}{u_2} &= \frac{Af(\theta)(1-G(z_2^R))}{s}\label{eq:q2_ss_u2}\\
+\end{align}
+
+\subsection*{Part 2}
+
+We have the condition $u=  0.5 u_1 + 0.5u_2 = 0.05$. Since $b_1 = b_2$ in the given steady state, we have $u_1 = u_2 = 0.05$. This gives 
+\begin{equation}
+    f(\theta) = \frac{19s}{1-G(z_1^R)}
+\end{equation}
+
+With $\eta = 0.5$, we also have $q(\theta) = \frac{1}{f(\theta)}$. Therefore, we have the following two equations
+
+\begin{align*}
+    (r+s)(z^R_1 - b_1)(1-G(z_1^R)) &= 19 \gamma s \int_{z^R_1} (z-z^R_1 ) dG(z)\\
+    19 cs (r+s) &= (1-\gamma)(1-G(z_2^R))\int_{z^R_2} (z-z^R_2 ) dG(z)
+\end{align*}
+
+Solving these numerically gives $$\gamma = 0.129122$$
+
+The UE transition rates are given by 
+
+\begin{align*}
+    \theta &= 4.866649 \\ 
+    z^R_1 = z^R_1 &= 0.142156\\
+    UE_{10} = UE_{20}&= A f(\theta) (1-G(z_1^R)) = s \frac{1-u_1}{u_1} = 0.38
+\end{align*}
+
+\subsection*{Part 3}
+Using the above computed $\gamma$ and $\beta_1 = 1.5*0.07, \beta_2 = 0.07$, we can compute $\theta, u_1, u_2, z^R_1, z^R_2$ using equations \ref{eq:q2_ss_u1}, \ref{eq:q2_ss_u2}, \ref{eq:q2_ss_c}, \ref{eq:q2_ss_zR1} and \ref{eq:q2_ss_zR2}. 
+
+\begin{align}
+    u &= 0.064857\\
+    u_1 &= 0.078724\\
+    u_2 &= 0.050991 \\
+    z^R_1   &= 0.152757\\
+    z^R_2   &= 0.139221\\
+    \theta &= 3.790107
+\end{align}
+
+These gives the UE transition rates
+\begin{align}
+    UE_{11} &= 0.234053\\
+    UE_{21} &= 0.372227\\
+\end{align}
+
+Type 1 workers have higher outside options, and are therefore more pickier. They reject more offers and have higher wages. Therefore, type 1 workers have higher unemployment and lower UE transitions that type 2 workers. Unemploymnet rates of type 2 workers is slightly larger than 0.05 since type 1 workers pull down market tightness and therefore decreases matching probability of type 1 workers.
+
+
+\subsection*{Part 4}
+
+The OLS regressions gives $\hat \beta = -1.17824$ with $se = 0.03398$ and p-value of $p= 0.0008$.\\
+
+$\hat \beta $ is the combined \textbf{Macro+Micro} estimate of elasticity of UE transitions w.r.t outside options.
+
+\subsection*{Part 5}
+The OLS regressions gives $\check \beta = -1.19523$ with $se = 0.05097$ and p-value of $p= 0.0271$. Also $\alpha_1 - \alpha_2 = 0.01033$.\\
+
+$\check \beta $ is the \textbf{Micro} estimate of elasticity of UE transitions w.r.t outside options. It is slightly smaller than but not significantly differnet from $\hat \beta$. This means that the micro effects dominate over macro effects, and the general equilibrium macro effects of increased outside option (less tighter labor markets and lower match rates) counter the negative effect of outside option on UE transitions.
+
+\subsection*{Part 6}
+
+The computed values of $\hat \beta$ and $\check \beta$ are large, implying that $1\%$ increase in unemployment benefits lead to $\approx 1.17 - 1.19 \%$ decrease in unemployment. This is inconsistent with empiricial results.\\
+
+\textbf{Modifications???? - increase b?}

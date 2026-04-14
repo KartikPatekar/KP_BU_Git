@@ -5,8 +5,8 @@ Note that each period is independent, and therefore separation decisions only de
 Under given condition
 \begin{equation*}
     s(z) = \begin{cases}
-        1 ~~~\text{if}~ z \ge \hat z\\
-        0 ~~~\text{if}~ z < \hat z
+        0 ~~~\text{if}~ z \ge \hat z\\
+        1 ~~~\text{if}~ z < \hat z
     \end{cases}
 \end{equation*}
 
@@ -27,7 +27,7 @@ The value of an employed worker is
 
 The value of an unemployed worker is 
 \begin{align*}
-    U = b + \beta \mathbb E[ (1-f(\theta))U(z') + f(\theta) \max\{E(z'), U\}]
+    U = b + \beta \mathbb E[ (1-f(\theta))U + f(\theta) \max\{E(z'), U\}]
 \end{align*}
 
 
@@ -91,7 +91,7 @@ we can rewrite this as
     f(\theta) = \frac{\hat z -b + (1-\beta) \xi}{\gamma\beta \int_{\hat z}^\infty (\tilde z-\hat z)dG(\tilde z)}+ \frac{1}{\gamma}
 \end{align*}
 
-If $\hat z$ increases, then the integral value decreases and therefore $f(\theta)$ increases. This gives a positive relationship. An increase in vacancies or decrease in unemployment increases the job finding rate for workers, and therefore workers demand a higher wage that increases the cut-off productivity $\hat z$. 
+If $\hat z$ increases, then the integral value decreases and therefore $f(\theta)$ increases. This gives a positive relationship. An increase in vacancies or decrease in unemployment increases the job finding rate for workers, which results in increase in outside options for workers. Due to higher outside option, workers demand a higher wage that increases the cut-off productivity $\hat z$. 
 
 \subsection*{Part 6}
 
@@ -107,11 +107,11 @@ Setting $V=0$, this gives
     &= \beta q(\theta) \left((1-\gamma)\int_{\hat z}^\infty (\tilde z-\hat z)dG(\tilde z) - \xi\right) \tag{1-7}
 \end{align*}
 
-An increase in $\hat z$ decreases the intgral, and therefore requires a higher value of $q(\theta)$. Since $q$ is a decreasing function of $\theta$, this defines a decreasing relationship between $\theta$ and $\hat z$. An increase in vacancies or decrease in unemployment results in a lower worker finding rate of firms, and therefore firms are willing to accept matches with lower productivity.
+An increase in $\hat z$ decreases the intgral, and therefore requires a higher value of $q(\theta)$. Since $q$ is a decreasing function of $\theta$, this defines a decreasing relationship between $\theta$ and $\hat z$. An increase in vacancies or decrease in unemployment (tighter labor market) results in a lower worker finding rate of firms, and therefore firms are willing to accept matches with lower productivity.
 
 \subsection*{Part 7}
 
-Equation (1-6) implies a increasing relationship between $\hat z$ and $\theta$ due to workers demand for higher surplus when markets become tighter. Equation (1-7) shows a decreasing relationship between $\hat z$ and $\theta$ due to firms accepting a lower productivity workers as markets become tighter. Since both these equations hold in equilibrium, the solutions is given by the intersection.
+Equation (1-6) implies a increasing relationship between $\hat z$ and $\theta$ due to workers demand for higher surplus when markets become tighter. Equation (1-7) shows a decreasing relationship between $\hat z$ and $\theta$ due to firms accepting a lower productivity workers as markets become tighter. Since both these equations hold in equilibrium, the unique solution is given by the intersection.
 
 \subsection*{Part 8}
 
@@ -122,12 +122,12 @@ Equation (1-6) implies a increasing relationship between $\hat z$ and $\theta$ d
   \label{fig:q1_increase_xi}    
 \end{figure}
 
-From above figure, a larger $\xi$ leads to a decrease in cut-off productivity $\hat z$. The effects on $\theta$ are ambiguous from the graph.\\
+From above figure, a larger $\xi$ leads to a decrease in cut-off productivity $\hat z$. The effects on $\theta$ are ambiguous. Due to higher job firing cost, the number of vacancies decrease as firms are less willing to fire workers and are more flexible with hiring workers. But at the same time, number of firms decreases since firms future profits of hiring worker now decrease. The number of jobs decrease but the firms become more flexible in hiring. Therefore, whether labor markets become tigher or looser depends on the relative importance of these two effects, which depends on parameters in equations (1-6) and (1-7) and the productivity distribution $G$.\\
 
 In each period, the productivity is realized independently of prior periods. An employed workers in period $t$ become unemployed in period $t+1$ with probability $\mathbb P(z < \hat z)$. An unemployed worker in period $t$ received a job offer with probability $f(\theta_t)$, and accepts it with probability $P(z \ge \hat z)$. Therefore, in this model, the endogenous separation rate is $s = \mathbb P(z < \hat z)$ and the endogenous job finding rate is $\tilde f = f(\theta)\mathbb P(z \ge \hat z)  $. The steady state unemployment is given by
 \begin{equation*}
     \frac{u}{1-u} = \frac{s}{\tilde f} = \frac{\mathbb P(z < \hat z)}{f(\theta)\left(1-\mathbb P(z < \hat z)\right)}
 \end{equation*}
 
-When $\xi$ increases, $\hat z$ decreases and $\frac{\mathbb P(z < \hat z)}{\left(1-\mathbb P(z < \hat z)\right)}$ decreases. However, change is $f(\theta)$ depends on the distributio $G$ through equations (1-6) and (1-7), and therefore unemployment change is also dependent of distribution $G$. 
+When $\xi$ increases, $\hat z$ decreases and $\frac{\mathbb P(z < \hat z)}{\left(1-\mathbb P(z < \hat z)\right)}$ decreases. However, change is $f(\theta)$ depends on the distribution $G$ through equations (1-6) and (1-7), and therefore unemployment change is also dependent of distribution $G$. 
 

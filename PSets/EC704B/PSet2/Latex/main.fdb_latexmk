@@ -1,9 +1,9 @@
 # Fdb version 4
-["pdflatex"] 1775422970.36403 "g:/My Drive/PhD_Coursework/KP_BU_Git/PSets/EC704B/PSet2/Latex/main.tex" "main.pdf" "main" 1775422972.06487 0
-  "Exercises/ex1.tex" 1775422969 6428 8faa0d77432b04cf1c11c2070bb05cba ""
-  "Exercises/ex2.tex" 1775421983 0 d41d8cd98f00b204e9800998ecf8427e ""
+["pdflatex"] 1776142349.704 "g:/My Drive/PhD_Coursework/KP_BU_Git/PSets/EC704B/PSet2/Latex/main.tex" "main.pdf" "main" 1776142352.4024 0
+  "Exercises/ex1.tex" 1775503879 7052 ead098667d84e8245d6cd207bf5ec376 ""
+  "Exercises/ex2.tex" 1776142320 5133 9cdbd69ccc15432cf05b5f757939a526 ""
   "Exercises/ex3.tex" 1775411594 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "Figures/q1_increase_xi.png" 1775421855 104420 cb29f6ec786dc53b582746d1055928b0 ""
+  "Figures/q1_increase_xi.png" 1775502350 104420 cb29f6ec786dc53b582746d1055928b0 ""
   "c:/SoftwareZ/texlive/2026/texmf-dist/fonts/map/fontname/texfonts.map" 1774234632 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/SoftwareZ/texlive/2026/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1774231338 1004 54797486969f23fa377b128694d548df ""
   "c:/SoftwareZ/texlive/2026/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1774231338 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -28,8 +28,10 @@
   "c:/SoftwareZ/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1774231338 32080 340ef9bf63678554ee606688e7b5339d ""
   "c:/SoftwareZ/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1774231338 30251 6afa5cb1d0204815a708a080681d4674 ""
   "c:/SoftwareZ/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1774231338 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
+  "c:/SoftwareZ/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb" 1774231338 37166 8ab3487cbe3ab49ebce74c29ea2418db ""
   "c:/SoftwareZ/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb" 1774231338 35469 dcf3a5f2fc1862f5952e3ee5eb1d98c4 ""
   "c:/SoftwareZ/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1774231338 35752 024fb6c41858982481f6968b5fc26508 ""
+  "c:/SoftwareZ/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb" 1774231338 32734 69e00a6b65cedb993666e42eedb3d48f ""
   "c:/SoftwareZ/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1774231338 32726 39f0f9e62e84beb801509898a605dbd5 ""
   "c:/SoftwareZ/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1774231338 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "c:/SoftwareZ/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1774231338 32626 5abc8bb2f28aa647d4c70f8ea38cc0d3 ""
@@ -74,7 +76,7 @@
   "c:/SoftwareZ/texlive/2026/texmf-var/web2c/pdftex/pdflatex.fmt" 1774243441 3636686 9289ac9fdaedd7dbca146321adfa937b ""
   "c:/SoftwareZ/texlive/2026/texmf.cnf" 1774243169 713 e69b156964470283e0530f5060668171 ""
   "g:/My Drive/PhD_Coursework/KP_BU_Git/PSets/EC704B/PSet2/Latex/main.tex" 1775411594 1633 caba40ed3d9b907065da27e8330673a7 ""
-  "main.aux" 1775422971 306 9277ff39ce6004298ac5934fce724ab2 "pdflatex"
+  "main.aux" 1776142351 544 05a681f5aff381309e3b7a7a60e30c44 "pdflatex"
   "main.tex" 1775411594 1633 caba40ed3d9b907065da27e8330673a7 ""
   (generated)
   "main.aux"
